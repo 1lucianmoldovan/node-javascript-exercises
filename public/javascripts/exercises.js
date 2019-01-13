@@ -60,8 +60,26 @@ function printPage(){
     return false;
 }
 
+/** Exercise #4 */
 
+function calculateArea(){
+    var a = document.getElementById("inputA").value;
+    var b = document.getElementById("inputB").value;
+    var c = document.getElementById("inputC").value;
+    var rez = document.getElementById("resultTri");
+    var semiperimeter = (a * 1 + b * 1 + c * 1) / 2;
+    var area = Math.sqrt((semiperimeter * 1) * (semiperimeter * 1 - a*1) * (semiperimeter * 1 - b*1) * (semiperimeter*1 - c*1));
+    if(area == 0){
+        alert("Stupido that's not a triangle!!")
+    }
+    if(area == false){
+        alert("You're realy stupido wright?")
+    }
+    rez.innerHTML = area;
 
+    console.log("values: ", a, ",", b, ",", c)
+    console.log("perimeter: ", semiperimeter )
+}
 
 /** Funtion Calls */
 /**Exercise #1 */
