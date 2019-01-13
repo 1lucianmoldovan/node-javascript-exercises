@@ -4,16 +4,7 @@ function displayTime(){
     var dayNow = newDate.getDay();
     var weeckDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     $('#dayNow').html(weeckDays[dayNow]);
-      
-    var day = newDate.getDate();
-    var month = newDate.getMonth();
-    var year = newDate.getFullYear();
-    var monts = ["Jan.", "Feb.", "Mar.", "Apr.", "May.", "Jun.", "Jul.", "Aug", "Sep.", "Oct.", "Nov.", "Dec."];
-    if(day < 10){
-        day = "0" +  day;
-    }
-    $('#dateNow').html(day + "." + monts[month] + year )
-       
+    
     var hours = newDate.getHours();
     var minutes = newDate.getMinutes();
     var seconds = newDate.getSeconds();
@@ -49,6 +40,15 @@ function displayTime(){
     };
     $('#timeNow').html(hours+" "+prepend+" : "+minutes+" : "+seconds )
     
+    /** Exercise #3 */  
+    var day = newDate.getDate();
+    var month = newDate.getMonth();
+    var year = newDate.getFullYear();
+    var monts = ["Jan.", "Feb.", "Mar.", "Apr.", "May.", "Jun.", "Jul.", "Aug", "Sep.", "Oct.", "Nov.", "Dec."];
+    if(day < 10){
+        day = "0" +  day;
+    }
+    $('#dateNow').html(day + "." + monts[month] + year )
     /*console.log("Today is:", weeckDays[b]);
     console.log("Weeck list:", weeckDays);
     console.log("Time: ", hours, ":", minutes, ":", seconds);*/
@@ -59,7 +59,7 @@ function printPage(){
     window.print();
     return false;
 }
-/** Ecercise #3 */
+
 
 
 
