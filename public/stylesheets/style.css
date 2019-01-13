@@ -1,8 +1,25 @@
+header {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 body {
-  padding: 50px;
+  padding: 2%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: antiquewhite;
 }
 
 a {
   color: #00B7FF;
+}
+.main-container{
+  width: 99%;
+  border: 3px solid #00B7FF 
+}
+footer {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
 }
