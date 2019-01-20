@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <title>Exercitii Jquery</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/jqstyle.css">
+</head>
+
+<body>
+    <div id="first-page" class="container">
+        <table id="table-first">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Marks in science</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="wrap">
+            <button id="newContactBtn">Add new Student</button>
+            <p>The above table has <span id="rowSpan" style="color:blue; font-weight:800"></span> rows and <span id="columsSpan"
+                    style="color:green; font-weight:800"></span> colums.
+            </p>
+            <button id="print">Print</button>
+        </div>
+        <div id="firstOfWrap" class="wrap">
+            <div>
+                <h3>Character counting exercice</h3>
+                <form>
+                    <label>Maximum 15 characters</label>
+                    <input id="textarea" maxlength="15">
+                    <span id="rchars">15</span> Character(s) Remaining
+                </form>
+                <button class="newDiv" onclick="newDiv()">Create new Div</button>
+            </div>
+            <div id="listLearn">
+                <h3>Make first word bold of all elements</h3>
+                <p>Html Exercises</p>
+                <p>Css Exercises</p>
+                <p>JavaScript Exercises</p>
+                <p>JQuery Exercises</p>
+            </div>
+        </div>
+    </div>
+    <div id="second-page" class="container">
+        <div id="secondOfWrap" class="wrap">
+            <div id="leftSide" style="background-color:blue">
+                <button class="transferBtn">Hit me 1</button>
+                <button class="transferBtn">Hit me 2</button>
+                <button class="transferBtn">Hit me 3</button>
+                <button class="transferBtn">Hit me 4</button>
+                <button class="transferBtn">Hit me 5</button>
+                <button class="transferBtn">Hit me 6</button>
+                <button class="transferBtn">Hit me 7</button>
+                <button class="transferBtn">Hit me 8</button>
+                <button class="transferBtn">Hit me 9</button>
+            </div>
+            <div id="rightSide" style="background-color:red"></div>
+        </div>
+        <div id="colorSelector">
+            <span id="optionsLeft">
+                <select id="myColorLeft">
+                    <option value="Red">Red</option>
+                    <option selected="selected" value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Black">Black</option>
+                    <option value="aquamarine">Aquamarine</option>
+                </select>
+                <button onclick="removeOptions(this)">Go to defalt</button>
+            </span>
+            <span id="optionsRight">
+                <select id="myColorRight">
+                    <option selected="selected" value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Black">Black</option>
+                    <option value="aquamarine">Aquamarine</option>
+                </select>
+                <button onclick="removeOptions(this)">Go to defalt</button>
+            </span>
+        </div>
+        <div id="textDe" class="wrap">
+            <span>
+                <h2>
+                    Übung macht den Meister
+                </h2>
+                <h5 id="unAltId"></h5>
+            </span>
+            <form action="">
+                <input type="text">
+                <br>
+                <p>You typed <span id="charNr">0</span> characters</p>
+                <h4></h4>
+                <button id="jQcheck" onclick="checkJq()">Jquery check</button>
+            </form>
+            <button id="remClass" onclick="remClassTextUderLine()" ondblclick="classRemover()">Remoove underline, <br>
+                dblclikc.. surpize:)</button>
+
+
+        </div>
+        <div id="third-page" class="container">
+            <div id="arrayStuf">
+                <form action="">
+                    <textarea name="array" id="array" cols="30" rows="10"></textarea>
+
+                    <button>Sort up</button>
+                    <button>Sort Down</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="modal1" class="sec-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+
+            <form action="">
+                <label for="lName">First Name</label>
+
+                <input id="lName" type="text" placeholder="Last Name">
+
+                <label for="fName">Last Name</label>
+
+                <input id="fName" type="text" placeholder="First Name">
+
+                <label for="phoneNumber">Phone Number</label>
+
+                <input id="phoneNumber" name="e-mail" type="number" placeholder="phoneNumber">
+
+
+
+            </form>
+            <button id="submitBtn">Submit</button>
+
+
+        </div>
+    </div>
+    <footer>
+        <div id="surfBar">
+            <ul>
+                <li><span>Page</span><a href="#" data-page="first">1</a></li>
+                <li><span>,</span><a href="#" data-page="second">2</a></li>
+                <li><span>,</span><a href="#" data-page="third">3</a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="javascripts/index.js"></script>
+    <script src="javascripts/jqueryex1.js"></script>
+    <script src="javascripts/exercises.js"></script>
+    <script src="javascripts/page1.js"></script>
+</body>
+
+</html>
